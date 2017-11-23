@@ -34,11 +34,11 @@ public class TodoAdapter extends ResourceCursorAdapter {
 
         if (completed_value == 1) {
             Log.d("MainActivity", "Checking: set false because completed_value = " + completed_value);
-            todo.setPaintFlags(todo.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
+
             completed.setChecked(false);
         } else {
             Log.d("MainActivity", "Checking: set true because completed_value = " + completed_value);
-            todo.setPaintFlags(todo.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+
             completed.setChecked(true);
         }
     }
